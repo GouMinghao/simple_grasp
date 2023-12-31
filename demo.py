@@ -17,8 +17,8 @@ if __name__ == "__main__":
     for obj_id_id in range(len(obj_ids)):
         # load data from graspnet dataset
         select_obj_id = obj_ids[obj_id_id]
-        obj_mask = graspnet_utils.load_obj_mask(select_obj_id, SCENE_ID, ANN_IDS[0])
-        all_data = graspnet_utils.load_all_data(SCENE_ID, ANN_IDS[0])
+        obj_mask = graspnet_utils.load_obj_mask(select_obj_id, SCENE_ID, ANN_IDS[1])
+        all_data = graspnet_utils.load_all_data(SCENE_ID, ANN_IDS[1])
         pcd = all_data["pcd"]
         rgb = all_data["rgb"]
         camK = graspnet_utils.load_camK()
